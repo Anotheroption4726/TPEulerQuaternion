@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 925106440}
   - component: {fileID: 925106435}
   - component: {fileID: 925106439}
+  - component: {fileID: 925106444}
   - component: {fileID: 925106437}
   - component: {fileID: 925106436}
   - component: {fileID: 925106442}
@@ -559,12 +560,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925106434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67d9b6a0ffe6ad840920aec666fd8f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Vector: {x: 0, y: 0, z: 0}
+  m_Vector: {x: 1, y: 0, z: 0}
   m_Angle: 90
 --- !u!114 &925106440
 MonoBehaviour:
@@ -629,6 +630,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149b873e7dcf8fa46a45cdccc16f5135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &925106444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925106434}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c524e319a9e0f154abbb933ee60b9db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayon: 1
+  longitude: 0
+  colatitude: 90
+  m_Angle: 90
 --- !u!1001 &1716712324
 PrefabInstance:
   m_ObjectHideFlags: 0
