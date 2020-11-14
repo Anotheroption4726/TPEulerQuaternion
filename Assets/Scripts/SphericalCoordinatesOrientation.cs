@@ -9,9 +9,10 @@ public class SphericalCoordinatesOrientation : MonoBehaviour
 	[SerializeField]
 	private float rayon;    //	radius
 	[SerializeField]
-	private float longitude;    //	elevation
+	private float longitude;    //	polar
 	[SerializeField]
-	private float colatitude;   //	polar
+	private float latitude;   //	elevation
+
 
 	[Header("Quaternion angle")]
 	[SerializeField]
@@ -24,7 +25,7 @@ public class SphericalCoordinatesOrientation : MonoBehaviour
 	// Use this for initialization
 	void Update()
 	{
-		transform.rotation = Quaternion.AngleAxis(m_Angle, SphericalToCartesian(DegreesToRadiants(rayon), DegreesToRadiants(colatitude), DegreesToRadiants(longitude)));
+		transform.rotation = Quaternion.AngleAxis(m_Angle, SphericalToCartesian(rayon, DegreesToRadiants(longitude), DegreesToRadiants(latitude)));
 	}
 
 	private Vector3 SphericalToCartesian(float radius, float polar, float elevation)
@@ -44,6 +45,7 @@ public class SphericalCoordinatesOrientation : MonoBehaviour
 		float radiants;
 
 		radiants = Convert.ToSingle(Math.PI * degrees / 180.0);
+		//Mathf.DegtoRad ou un truc comme ça
 
 		return radiants;
 	}
